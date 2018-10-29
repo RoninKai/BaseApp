@@ -1,11 +1,11 @@
-package tanker.app.frame;
+package tanker.app.frame.util;
 
 import android.text.TextUtils;
 
+import tanker.app.frame.BuildConfig;
 
 /**
  * @author : Tanker
- * @email :zhoukai@zto.cn
  * @date : 2018/07/18
  * @describe : 判断构建类型工具类
  */
