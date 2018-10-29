@@ -21,7 +21,7 @@ import android.widget.TextView;
 import tanker.app.frame.R;
 import tanker.app.frame.adapter.BaseAdapter;
 import tanker.app.frame.listener.CustomListener;
-import tanker.app.frame.util.ImageManager;
+import tanker.app.frame.util.image.ImageLoad;
 
 /**
  * @author : Tanker
@@ -165,7 +165,7 @@ public class ViewHelper {
      * @param url
      */
     public void loadImage(@IdRes int viewId, String url) {
-        ImageManager.load(mActivity, url).into((ImageView) findView(viewId));
+        ImageLoad.load(mActivity, url).into((ImageView) findView(viewId));
     }
 
     /**
@@ -175,7 +175,7 @@ public class ViewHelper {
      * @param fileUrl 本机图片地址
      */
     public void loadFileImage(@IdRes int viewId, String fileUrl) {
-        ImageManager.loadFile(mActivity, fileUrl).into((ImageView) findView(viewId));
+        ImageLoad.loadFile(mActivity, fileUrl).into((ImageView) findView(viewId));
     }
 
     /**

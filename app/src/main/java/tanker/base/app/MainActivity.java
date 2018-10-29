@@ -1,16 +1,22 @@
 package tanker.base.app;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
+import tanker.app.frame.activity.BaseActivity;
 import tanker.app.frame.util.LogUtils;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getContentViewId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected String getTitleText() {
+        return null;
+    }
+
+    @Override
+    protected void initView() {
         LogUtils.i("hahahhah ");
     }
 

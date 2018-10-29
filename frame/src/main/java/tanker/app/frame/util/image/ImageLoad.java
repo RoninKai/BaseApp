@@ -1,4 +1,4 @@
-package tanker.app.frame.util;
+package tanker.app.frame.util.image;
 
 import android.content.Context;
 
@@ -14,7 +14,7 @@ import java.io.File;
  * @date : 2018/07/24
  * @describe : 图片加载工具类
  */
-public class ImageManager {
+public class ImageLoad {
 
     /**
      * 加载图片
